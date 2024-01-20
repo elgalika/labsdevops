@@ -3,16 +3,16 @@ spring:
   # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://trumpet.db.elephantsql.com/khbigqkv
-    username: khbigqkv
-    password: O2uQHu004jkxteHRUA3e-jwVntI0-0Fd
+    url: jdbc:postgresql://devopsfti.postgres.database.azure.com/postgres
+    username: devopsfti
+    password: pgsql2024!
   # JPA properties
   jpa:
     hibernate.ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 # Server configuration
 server:
-  port: 8080
+  port: 9090
 # Security configuration
 security:
   user:

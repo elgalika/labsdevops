@@ -4,9 +4,9 @@ metadata:
   name: backend-svc1
 spec:
   ports:
-    - port: 8081
+    - port: 9091
       protocol: TCP
-      targetPort: 8080
+      targetPort: 9090
   selector:
     app: backend
   type: ClusterIP  
@@ -18,9 +18,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 8082
+    - port: 9092
       protocol: TCP
-      targetPort: 8080
+      targetPort: 9090
   selector:
     app: backend 
 
