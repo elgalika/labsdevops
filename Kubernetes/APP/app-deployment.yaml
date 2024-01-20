@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: lmilt95/fti:latest
+        image: elli31/fti:latest
         imagePullPolicy: Always
         securityContext:
           allowPrivilegeEscalation: false
@@ -34,18 +34,18 @@ spec:
             memory: "1024Mi"
             cpu: "500m"
         ports:
-        - containerPort: 8080
+        - containerPort: 9090
         livenessProbe:
           httpGet:
             path: /
-            port: 8080
+            port: 9090
           initialDelaySeconds: 60
           failureThreshold: 3
           periodSeconds: 60
         readinessProbe:
           httpGet:
             path: /
-            port: 8080
+            port: 9090
           initialDelaySeconds: 60
           failureThreshold: 3
           periodSeconds: 60
