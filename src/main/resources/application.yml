@@ -3,9 +3,9 @@ spring:
   # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://devopsfti.postgres.database.azure.com/postgres
-    username: devopsfti
-    password: pgsql2024!
+    url: jdbc:postgresql://devopsfti.postgres.database.azure.com/databasename
+    username: usernameofdatabase
+    password: passwordofdatabase
   # JPA properties
   jpa:
     hibernate.ddl-auto: update
